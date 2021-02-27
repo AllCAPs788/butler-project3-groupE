@@ -24,3 +24,7 @@ Availability:
 
 Thursdays: 5:30 or 6-7pm
 March 5th: after 6pm
+
+Pandas work on separate branch
+app?
+Putting csvs onto SQL Postgres
