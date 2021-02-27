@@ -17,3 +17,10 @@ What are we using? Google Colab/Pandas and Sci-kit learn
 Strengths? Weaknesses?
 * Not sure I've fully absorbed machine learning (if at all)
 * strengths: presentation materials, analysis
+
+Timeline: March 6th,
+
+Availability:
+
+Thursdays: 5:30 or 6-7pm
+March 5th: after 6pm
