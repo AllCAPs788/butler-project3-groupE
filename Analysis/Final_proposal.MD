@@ -19,3 +19,5 @@ Tableau link: (only one visualization so far): https://public.tableau.com/profil
 If we need to combine files in Pandas:
 https://www.freecodecamp.org/news/how-to-combine-multiple-csv-files-with-8-lines-of-code-265183e0854/ 
 
+JFIF conversion: https://convertio.co/download/bb717520de37fa52c67e70fd00e3f264f02642/ 
+
