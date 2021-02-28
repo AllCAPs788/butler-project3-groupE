@@ -14,3 +14,8 @@ Target comparison column: ratings_count (i.e. exposure for titles)
 Databases: Postgres SQL
 Deployment: Heroku
 
+Tableau link: (only one visualization so far): https://public.tableau.com/profile/clark.pfifer#!/vizhome/books_ml/Sheet2?publish=yes 
+
+If we need to combine files in Pandas:
+https://www.freecodecamp.org/news/how-to-combine-multiple-csv-files-with-8-lines-of-code-265183e0854/ 
+
