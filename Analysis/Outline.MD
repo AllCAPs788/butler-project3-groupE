@@ -27,4 +27,14 @@ March 5th: after 6pm
 
 Pandas work on separate branch
 app?
-Putting csvs onto SQL Postgres
+Monday finishing putting csvs onto SQL Postgres, starting Pandas 
+Tuesday: possible SQL wrap-up at 6pm
+Wednesday: class
+Thursday: pandas
+
+
+Web-page or app design:
+* access to database
+* top 10 predictions
+* Tableau visualizations
+* 
