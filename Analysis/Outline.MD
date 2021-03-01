@@ -24,3 +24,17 @@ Availability:
 
 Thursdays: 5:30 or 6-7pm
 March 5th: after 6pm
+
+Pandas work on separate branch
+app?
+Monday finishing putting csvs onto SQL Postgres, starting Pandas 
+Tuesday: possible SQL wrap-up at 6pm
+Wednesday: class
+Thursday: pandas
+
+
+Web-page or app design:
+* access to database
+* top 10 predictions
+* Tableau visualizations
+* 
