@@ -6,10 +6,12 @@ what are we using? Sci-kit, Pandas, Tableau, Google Slides (presentation for inv
 
 What are we trying to predict? 
 
-What is our target column as a means of comparison? What we want to predict is how popular books wil be based on... author, category, average_rating, text_reviews_count, split publication data into mm/yyyy, publisher, 
+Based on your choices, we will provide you recommendations based on title, author, publisher, and categories (genres) to let you expand on your tastes. 
 
-Target comparison column: ratings_count (i.e. exposure for titles)
+## Our Algorith
 
+
+title, authors, publisher, categories
 
 Databases: Postgres SQL
 Deployment: Heroku
