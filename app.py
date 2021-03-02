@@ -9,21 +9,22 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     return render_template("index.html")
-@app.route("/recommendations")
-def book_recommend():
+    
+@app.route("/pandas")
+def pandas():
     return render_template("pandas.html")
-
+@app.route("/data")
 def raw_data():
     return render_template("raw_data.html")
-
+@app.route("/api")
 def api():
     return render_template("api.html")
-    
+@app.route("/documents")    
 def documents():
     return render_template("documents.html")    
     
     
-    return redirect("/")
+    
     
 
     
