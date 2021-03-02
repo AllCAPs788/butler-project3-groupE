@@ -1,6 +1,6 @@
 # Be a Reading Machine
 
-![book stacks](../assets/css/images/book_stacks_1.jpg)
+![book stacks](../assets/images/book_stacks_1.jpg)
 
 We want to know which books will be recommended to users based on their choices in titles. To do this we will use a text-based algorithm that works off parameters listed below. 
 
