@@ -30,6 +30,47 @@
           <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
         </div>
       </div>
+    
+      <!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      
+
+    <div class = "login">
+      <h1>Enter a book title</h1>
+
+      <form action="{{ url_for('results') }}" method="post">
+        <input type="text" name="booktitle" placeholder="Book Title" required="required" />
+        <button type="submit" class="btn">Submit</button>
+      </form>
+      <form action="{{ url_for('pandas') }}">
+        <button type="submit" class="btn">Clear</button>
+      </form>
+
+      <br>
+      {{ book_text }}
+      <br>
+      <br>
+      <table border = 1>
+        {% for key, value in results_table %}
+    
+        <tr>
+           <td> {{ key }} </td>
+           <td> {{ value }} </td>
+        </tr>
+    
+        {% endfor %}
+     </table>
+
+    </div>
+
+    <div class="w3-third w3-center">
+      <!-- change image -->
+        
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
