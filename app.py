@@ -86,7 +86,7 @@ def results():
     book_list = recommend(input_index, cosine_similarity_all_content)
     #book_list_html = book_list.to_html()
 
-    return render_template("pandas.html", book_text='{}'.format(user_title), \
+    return render_template("pandas.html", book_text='Recommendations based on {}'.format(user_title), \
         results_table=book_list)    
     
         
