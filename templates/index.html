@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Stela Co. Predictive Reading</title>
+<title>Recommender Model - Home</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -19,10 +19,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <div class="w3-bar w3-red w3-card w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="{{ url_for('index') }}" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <!-- not using
     <a href="{{ url_for('raw_data') }}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Data</a>
+    -->
     <a href="{{ url_for('pandas') }}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Our Model</a>
+    <!-- not using
     <a href="{{ url_for('api') }}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">API</a>
     <a href="{{ url_for('documents') }}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Documentation</a>
+      -->
   </div>
 
   <!-- Navbar on small screens -->
