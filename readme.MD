@@ -1,6 +1,6 @@
 # Be a Reading Machine
 
-![book stacks](../assets/images/book_stacks_1.jpg)
+![book stacks](https://raw.githubusercontent.com/AllCAPs788/butler-project3-groupE/master/assets/images/book_stacks_1.jpg)
 
 We want to know which books will be recommended to users based on their choices in titles. To do this we will use a text-based algorithm that works off parameters listed below. 
 
@@ -26,7 +26,7 @@ That data was originally pulled from two separate datasets off Kaggle:
 * https://www.kaggle.com/dylanjcastillo/7k-books-with-metadata 
 * https://www.kaggle.com/jealousleopard/goodreadsbooks 
 
-We then combined that data into the CSV linked above. From there, we cleaned the data in our Jupyter [**Notebook**](../Data/data_cleaning.ipynb). 
+We then combined that data into the CSV linked above. From there, we cleaned the data in our Jupyter [**Notebook**](https://github.com/AllCAPs788/butler-project3-groupE/blob/master/Data/data_cleaning.ipynb). 
 
 ## Tableau   
 
