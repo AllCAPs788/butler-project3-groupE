@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Recommender Model - Home</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-/* .fa-anchor,.fa-coffee {font-size:200px} */
-</style>
+<head>
+  <title>Book Recommender - Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+    .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+    /* .fa-anchor,.fa-coffee {font-size:200px} */
+  </style>
+</head>
 <body>
 
 <!-- Navbar -->
@@ -19,43 +21,38 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <div class="w3-bar w3-red w3-card w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="{{ url_for('index') }}" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-    <!-- not using
-    <a href="{{ url_for('raw_data') }}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Data</a>
-    -->
     <a href="{{ url_for('pandas') }}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Our Model</a>
-    <!-- not using
-    <a href="{{ url_for('api') }}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">API</a>
-    <a href="{{ url_for('documents') }}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Documentation</a>
-      -->
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+    <a href="{{ url_for('index') }}" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="{{ url_for('pandas') }}" class="w3-bar-item w3-button w3-padding-large">Our Model</a>
   </div>
 </div>
 
 <!-- Header -->
-<header class="w3-container w3-red w3-center" style="padding:128px 16px">
-  <h1 class="w3-margin w3-jumbo">About Us</h1>
-  <p class="w3-text-dark-grey w3-auto">What is a Stela? Why such a funky-sounding name? Well, a stela is an upright stone marked writings such as inscriptions dedicated to important persons or events. That name lends a sense of importance for how we wish to bring writing and reading to our customers. </p>
+<header class="w3-container w3-red w3-center" style="padding:128px 200px">
+  <h1 class="w3-margin w3-jumbo">Recommender Systems</h1>
+  <p class="w3-text-dark-grey w3-auto">Recommender systems are everywhere on the web: suggesting new media content you might like such as videos or articles, products to buy on e-commerce sites, and even new people to meet on dating apps.</p>
+  <h4 class="w3-text-dark-grey w3-auto">But how do they work?</h4>
 </header>
 
 <!-- First Grid -->
 <div class="w3-row-padding w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-twothird">
-      <h1>Our Mission</h1>
-      <h5 class="w3-padding-32">We at Stela seek to bring readers the titles they crave.  </h5>
-      <p class="w3-text-grey">With our algorithm, we return 10 choices of titles based on the title you enter. This is based on the content of that title.</p>
+      <h1>Collaborative vs. Content-Based</h1>
+      <h5 class="w3-padding-32">Many recommender systems make use of collaborative filtering, content-based filtering, or a combination.  </h5>
+      <p class="w3-text-grey">Collaborative filtering needs data about the users to work, it recommends items based on similarities between users.  An example is if person A and person B have both watched the same movie, a different movie that B watched could be recommended to A.  The system doesn’t need to know anything about the movies, only who watches them.  An algorithm that could be used for collaborative filtering is k-nearest neighbor.  </p>
+
+      <p class="w3-text-grey">Content-based systems use information about the items, not the users.  This is useful when user data is not stored by the site or does not require a login.  An example is if a user listens to a song, the system will compare the attributes of that song to others and recommend similar songs. </p>
     </div>
 
     <div class="w3-third w3-center">
-      <!-- change image -->
+      <!-- change image 
         <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+      -->
     </div>
   </div>
 </div>
@@ -69,9 +66,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     </div>
 
     <div class="w3-twothird">
-      <h1>How do we do it?</h1>
-      <h5 class="w3-padding-32">What we want to provide you with recommendations based on the choices you enter. </h5>
-      <p class="w3-text-grey">Just enter your title, and our algorithm will do the rest. Easy, right? That's just the way we want it too. So, keep on reading, everybody. .</p>
+      <h1>Our Model</h1>
+      <h5 class="w3-padding-32">Our model is a content-based system which uses attributes of a book to give recommendations to the user for similar books.   </h5>
+      <p class="w3-text-grey">The attributes used are: title, author, publisher, and category.  The TF-IDF algorithm is used to analyze the text of these book attributes and creates a matrix.  The user chooses one book, and the system will use the matrix to find the 10 most similar books to the one they chose.  Go to "Our Model" to try it out yourself!</p>
     </div>
   </div>
 </div>
@@ -82,15 +79,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity">  
-  <div class="w3-xlarge w3-padding-32">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <i class="fa fa-github" aria-hidden="true"></i>
- </div>
  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
